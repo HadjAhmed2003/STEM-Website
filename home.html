@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8" lang="en">
+    <title>Algiers STEM Center</title>
+    <link rel="stylesheet" href="home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div>
+            <img id="logo" src="stemlogo.png">
+        </div>
+        <ul id="navbar">
+            <li class= "navchoice">HOME</li>
+            <li class= "navchoice">BLOG</li>
+            <li class= "navchoice">ABOUT</li>
+         </ul>
+    </nav>
+    <section id="home_image">
+        <img src="stemlogo.png">
+    </section>
+    <section class="home_section">
+        <h1>ABOUT US</h1>
+        <div id="about">
+            <div id="about_pic"></div>
+            <p>
+                The Algiers STEM Center is an industry-led initiative to strengthen the innovation, 
+                critical thinking and communication skills of the Algerian workforce via direct training of
+                 youth, targeted training of teachers and community education forums and events.
+                The Boeing Company, Dow Chemical, Occidental Petroleum and the U.S. Embassy in Algiers 
+                support World Learning’s STEM initiatives in Algeria.
+            </p>
+        </div>
+    </section>
+    <section class="home_section">
+        <h1>OUR IMPACT</h1>
+        <div class="homesection_sub" id= "impact">
+            <div id= "workshop_delivered">
+                <p id = "workshops_number">+0</p>
+                <h3>workshops delivered</h3>
+            </div>
+            <div id= "student">
+                <p id = "students_number">+0</p>
+                <h3>students</h3>
+            </div>
+            <div id= "alumni">
+                <p id = "alumni_number">+0</p>
+                <h3>alumni</h3>
+            </div>
+        </div>
+    </section>
+    <section class="home_section">
+        <h1>OUR PARTNERS</h1>
+        <div class="homesection_sub" id="partners">
+            <div id="USembassy"></div>
+            <div id="WL"></div>
+            <div id="MoneyGram"></div>
+            <div id="dow"></div>
+            <div id="Boeing"></div>
+        </div>
+    </section>
+    <section class="home_section">
+        <h1>OUR ACTIVITIES</h1>
+        <div class="homesection_sub" id="activities">
+            <div id="electronics" onclick="electronics_description()">
+                <h2>electronics</h2>
+                <div id = "electronics_description" class = "electronics_opacity">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, accusantium suscipit labore vitae minima cum mollitia aliquid ipsum recusandae consequuntur corporis totam ad perspiciatis? A eaque possimus aut quasi eum?</p>
+                </div>
+            </div>
+            <div id="robotics" onclick="robotics_description()">
+                <h2>Robotics</h2>
+                <div id = "robotics_description" class = "robotics_opacity">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, accusantium suscipit labore vitae minima cum mollitia aliquid ipsum recusandae consequuntur corporis totam ad perspiciatis? A eaque possimus aut quasi eum?</p>
+                </div>
+            </div>
+            <div id="chemistry" onclick="chemistry_description()">
+                <h2>Chemistry</h2>
+                <div id= "chemistry_description" class = "chemistry_opacity">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, accusantium suscipit labore vitae minima cum mollitia aliquid ipsum recusandae consequuntur corporis totam ad perspiciatis? A eaque possimus aut quasi eum?</p>
+                </div>
+            </div>
+            <div id="programming" onclick="programming_description()">
+                <h2>Programming</h2>
+                <div id = "programming_description" class = "programming_opacity">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, accusantium suscipit labore vitae minima cum mollitia aliquid ipsum recusandae consequuntur corporis totam ad perspiciatis? A eaque possimus aut quasi eum?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="home_section">
+        <h1>OUR EVENTS</h1>
+        <div id="carousel_container">
+            <button class ="left_arrow" onclick="next()"></button>
+            <div class="slider">
+                <img src="FGC.png">
+                <img src="future_U.png">
+                <img src="summer_break.png">
+                <img src="teacher_training.jpg">
+            </div>
+            <button class ="right_arrow" onclick="prev()"></button>
+        </div>
+    </section>
+    <section class="home_section">
+        <h1>CONTACT US</h1>
+        <div class="homesection_sub" id="contact">
+            <div id="information">
+                <div id="call">
+                    <div><p>+21300000000</p></div>
+                </div>
+                <div id="gmail">
+                    <div><p>stemDZ@worldlearning.org</p></div>
+                </div>
+                <div id="facebook">
+                    <div><p>Algiers STEM Center</p></div>
+                </div>
+                <div id="instagram">
+                    <div><p>STEM.DZ</p></div>
+                </div>
+            </div>
+            <div id= "map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.839293610954!2d3.0366120146409865!3d36.72642067996379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128fad0fe6fe9c69%3A0x8b460b69da75ea99!2sAlgiers%20STEM%20Center!5e0!3m2!1sen!2seg!4v1632057519513!5m2!1sen!2seg" 
+               allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>DESIGNED AND DEVELOPPED WITH ♥ BY A STEM ALUMNUS</p>
+    </footer>
+    <script src="home.js"></script>
+</body>
+</html>

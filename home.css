@@ -1,0 +1,547 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    background-color: rgb(245, 245, 245);
+}
+
+nav {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgb(240, 240, 240);
+    width: 100%;
+    height: 4rem;    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0.5rem 0.3rem 1rem grey;
+    position: sticky;
+    top: 0;
+    z-index: 2;   
+}
+
+#navbar {
+    width: 40%;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navchoice {
+    font-size: 1.5rem;
+    color:#000A23 ;
+    font-family: Rajdhani;
+    padding: 0;
+    list-style-type: none;
+    font-weight: bold;
+}
+
+#logo{
+    width: 8rem;
+}
+
+#home_image {
+    background-image: url("background.jfif");
+    width: 100%;
+    height: 37rem; 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#home_image::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(130, 82, 222,0),rgb(220, 220, 220));
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+
+}
+
+/*#home_image h1 {
+    font-size: 2rem;
+    color:rgb(80, 80, 80) ;
+    font-family: "Patrick Hand";
+    text-align: center;
+    position: absolute;
+    bottom: 1rem;
+    z-index: 1;
+    font-weight: bolder;
+    text-transform: uppercase;
+    display: block;
+}*/
+
+#home_image img{
+    margin-top: 2rem ;
+    width: 30rem;
+    position: absolute;
+    bottom: -6rem;
+    z-index: 1;
+    display: block;
+}
+
+#about {
+    box-sizing: border-box;
+    margin: 0;
+    width: 100%;
+}
+
+.home_section h1{
+    color:#000A23 ;
+    font-family: Rajdhani;
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.home_section h1::after{
+    content: "";
+    position: absolute;
+    transform-origin: center;
+    bottom: 0;
+    left:0;    
+    background-color:#000A23 ;
+    width: 100%;
+    height: 0.4rem;
+    transform: scaleX(0.13);
+    border-radius: 2%;
+}
+
+#about{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 1.5rem;
+}
+
+#about #about_pic{
+    width: 35rem;
+    height: 20rem;
+    border-radius: 2%;
+    background-image: url("about.jpg");
+    background-position: center;
+    border: 1px solid black;
+    background-size: cover;
+
+}
+
+#about p{
+    width: 35rem;
+    text-justify: inter-word;
+    display: block;
+    color:#000A23 ;
+    font-family: Rajdhani;
+    font-size: 2rem;
+    text-indent: 3rem;
+}
+
+.homesection_sub {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+#partners div{
+    width: 20rem;
+    height: 10rem;
+}
+
+#partners #USembassy {
+    background-image: url("US.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#partners #WL {
+    background-image: url("WL.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#partners #dow {
+    background-image: url("DOW.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#partners #Boeing {
+    background-image: url("Boeing.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#partners #MoneyGram {
+    background-image: url("MoneyGram.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#activities div{
+    width: 20rem;
+    height: 18rem;
+    border: 1px solid black;
+    border-radius: 2%;
+    margin: 2rem 2rem;
+    position: relative;
+    cursor: pointer;
+}
+
+#activities div p { 
+    color: rgb(245, 245, 245);
+    font-size: 1.5rem;
+    font-family: Rajdhani;
+    text-align: center;
+}
+
+#activities div h2{
+    position: absolute;
+    z-index: 1;
+    font-family: Rajdhani;
+    font-size: 3rem;
+    color: whitesmoke;
+    bottom: 0.5rem;
+    left: 0.5rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+#activities div div{
+    position: absolute;
+    width: 100%;
+    height: 18rem;
+    bottom: 0.1rem;
+    left: 0.3rem;
+    z-index: 1;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    border: 1px solid black;
+    transition: opacity 1s linear;
+}
+
+#robotics::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 18rem;
+    top:0;
+    left:0;
+    background-image: url("robotics.jpg");
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+#robotics::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 17rem;
+    bottom:0;
+    left:0;
+    background-image: linear-gradient(rgba(255, 163, 15,0),rgba(255, 163, 15,1));
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+}
+
+.robotics_opacity { 
+    background-color: rgba(255, 163, 15,1);
+    opacity: 0;
+}
+
+#electronics::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 18rem;
+    top:0;
+    left:0;
+    background-image: url("electronics.jpg");
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+#electronics::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 17rem;
+    bottom:0;
+    left:0;
+    background-image: linear-gradient(	rgba(242, 0, 87,0),	rgba(242, 0, 87,1));
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+}
+
+.electronics_opacity { 
+    background-color: rgba(242, 0, 87,1);
+    opacity: 0;
+}
+
+#programming::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 18rem;
+    top:0;
+    left:0;
+    background-image: url("programming.JPG");
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+#programming::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 17rem;
+    bottom:0;
+    left:0;
+    background-image: linear-gradient(rgba(20, 158, 242,0),rgba(20, 158, 242,1));
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+}
+
+.programming_opacity {
+    background-color: rgba(20, 158, 242,1);
+    opacity: 0;
+}
+
+#chemistry::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 18rem;
+    top:0;
+    left:0;
+    background-image: url("chemistry.jpg");
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+#chemistry::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 17rem;
+    bottom:0;
+    left:0;
+    background-image: linear-gradient(rgba(130, 82, 222,0),rgba(130, 82, 222,1));
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+}
+
+.chemistry_opacity {
+    background-color: rgba(130, 82, 222,1);
+    opacity: 0;
+}
+
+.appear {
+    opacity: 1;
+}
+
+#impact div{
+    width: 20rem;
+    height: 20rem;
+    position: relative;
+}
+
+#impact div::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10rem;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#impact #workshop_delivered::before {
+    background-image: url("Workshop.png");
+}
+
+#impact #student::before {
+    background-image: url("Student.png");
+}
+
+#impact #alumni::before {
+    background-image: url("Alumni.png");
+}
+
+#impact div p {
+    text-align: center;
+    margin-top: 12rem;
+    font-size: 4rem;
+    font-family: "Rajdhani";
+    color:#000A23 ;
+}
+#impact div h3 {
+    text-align: center;
+    margin-top: -4rem;
+    font-size: 2rem;
+    font-family: "Rajdhani";
+    color:#000A23 ;
+}
+
+#contact #map iframe{
+    width: 28rem;
+    height: 28rem;
+    border: 0.1rem solid #000A23; 
+    border-radius: 3%;
+}
+
+#contact #information {
+    width: 28rem;
+    height: 28rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#contact #information div{
+    width: 25rem;
+    height: 4rem;
+    position: relative;
+}
+
+#contact #information div::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4rem;
+    height: 4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#contact #information #call::before{
+    background-image: url("call.png");
+}
+
+#contact #information #gmail::before{
+    background-image: url("gmail.png");
+}
+
+#contact #information #facebook::before{
+    background-image: url("facebook.png");
+}
+
+#contact #information #instagram::before{
+    background-image: url("instagram.png");
+}
+
+#contact #information div div{
+    position: absolute;
+    top: 0;
+    left: 4rem;
+    width: 24rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact #information div div p{
+    font-size: 1.5rem;
+    font-family: "Rajdhani";
+    color:#000A23 ;
+}
+
+footer {
+    margin-top: 3rem;
+    width: 100%;
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000A23;
+}
+
+footer p { 
+    font-size: 1rem;
+    font-family: "Rajdhani";
+    color: rgb(245, 245, 245);
+}
+
+#carousel_container {
+    width: 100%;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+.slider {
+    width: 33rem;
+    height: 33rem;
+    margin: 2rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider img {
+    width: 33rem;
+    height: 33rem;
+    object-fit: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#carousel_container button{
+    width: 2rem;
+    height: 2rem;
+    background-color: transparent;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+.left_arrow {
+    background-image: url("left-arrow.png");
+}
+
+.right_arrow {
+    background-image: url("right-arrow.png");
+}
